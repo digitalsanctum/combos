@@ -1,0 +1,13 @@
+[package]
+name = "combos"
+version = "0.1.0"
+description = "Print all permutations of a word list"
+authors = ["Shane Witbeck <shane@digitalsanctum.com>"]
+edition = "2021"
+license-file = "LICENSE"
+readme = "README.md"
+repository = "https://github.com/digitalsanctum/combos"
+
+[dependencies]
+itertools = "0.10.3"
+
