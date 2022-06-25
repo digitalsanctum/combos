@@ -1,6 +1,6 @@
 [package]
 name = "combos"
-version = "0.1.0"
+version = "0.1.1"
 description = "Print all permutations of a word list"
 authors = ["Shane Witbeck <shane@digitalsanctum.com>"]
 edition = "2021"
