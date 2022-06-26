@@ -2,6 +2,9 @@ use std::{env, path::Path, fs::File, io::{BufReader, BufRead}};
 
 use itertools::Itertools;
 
+const VERSION: &str = env!("CARGO_PKG_VERSION");
+const NAME: &str = env!("CARGO_PKG_NAME");
+
 fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
     let f = File::open(filename).expect("No such file");
     let br = BufReader::new(f);
@@ -12,6 +15,12 @@ fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+
+    if args.len() == 2 && (args[1] == "--version" || args[1] == "-v") {
+        println!("{} {}", NAME, VERSION);
+        return;
+    }
+
     if args.len() != 3 {
         eprintln!("\nusage: combos [FILE] [SIZE]\n");
         return;
