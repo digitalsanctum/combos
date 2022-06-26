@@ -1,6 +1,6 @@
 [package]
 name = "combos"
-version = "0.2.0"
+version = "0.2.1"
 description = "Print all permutations of a word list"
 authors = ["Shane Witbeck <shane@digitalsanctum.com>"]
 edition = "2021"
@@ -8,7 +8,8 @@ license-file = "LICENSE"
 readme = "README.md"
 repository = "https://github.com/digitalsanctum/combos"
 homepage = "https://github.com/digitalsanctum/combos"
-keywords = ["cli", "combos", "permumations", "tools", "shell"]
+keywords = ["cli", "combos", "permutations", "tools", "shell"]
+categories = ["command-line-utilities", "command-line-interface", "text-processing"]
 
 [dependencies]
 itertools = "0.10.3"
